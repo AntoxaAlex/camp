@@ -16,7 +16,8 @@ var campgroundRoutes 	= require("./routes/campgrounds"),
 	indexRoutes 		= require("./routes/index");
 
 // seedDB();
-mongoose.connect('mongodb+srv://dbUser:anton1995@cluster0-fnigp.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true})
+mongoose.connect(process.env.DATABASERL, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true})
+// mongoose.connect('mongodb+srv://dbUser:anton1995@cluster0-fnigp.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true})
 	.then(() => console.log('DB Connected!'))
 	.catch(err => {
 	console.log("DB Connection Error:" +err);
