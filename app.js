@@ -16,10 +16,10 @@ var campgroundRoutes 	= require("./routes/campgrounds"),
 	indexRoutes 		= require("./routes/index");
 
 // seedDB();
-mongoose.connect('mongodb://127.0.0.1:27017/yelp_camp', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
+mongoose.connect('mongodb+srv://dbUser:anton1995@cluster0-fnigp.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true})
 	.then(() => console.log('DB Connected!'))
 	.catch(err => {
-	console.log("DB Connection Error:" +err.message);
+	console.log("DB Connection Error:" +err);
 	});
 
 app.use(bodyParser.urlencoded({extended: true}));
