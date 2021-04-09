@@ -37,4 +37,4 @@ CLOUDINARY_API_SECRET = secret of cloudinary account
 
 **Try to use:**
 
-You can test this app [following this link](https://cyberchat95.herokuapp.com)
+You can test this app [following this link](https://salty-peak-59249.herokuapp.com/)
