@@ -11,7 +11,7 @@ YelpCamo is a simple website for sharing your camping experience.Server logic is
 ## Installation
 **Get the code**
 ```
-git clone https://github.com/AntoxaAlex/chat_app.git
+git clone https://github.com/AntoxaAlex/camp.git
 ```
 
 **Fetch dependencies:**
